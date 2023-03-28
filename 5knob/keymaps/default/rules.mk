@@ -1,10 +1,9 @@
-BOARD = GENERIC_RP_RP2040
-BOOTLOADER = W25Q080
+
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
 VIAL_INSECURE = yes 
 # link time optimization to reduce firmware size
-LTO_ENABLE = yes
+#LTO_ENABLE = yes
 
 # https://docs.qmk.fm/#/feature_grave_esc
 # Combine esc, ~, ` to one key.

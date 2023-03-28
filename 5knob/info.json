@@ -15,8 +15,8 @@
         "enabled": true,
         "rotary": [
             {
-                "pin_a": "GP01, GP03, GP05, GP07, GP09",
-                "pin_b": "GP02, GP04, GP06, GP08, GP10"
+                "pin_a": "GP1, GP3, GP5, GP7, GP9",
+                "pin_b": "GP2, GP4, GP6, GP8, GP10"
             }
         ]
     },
@@ -28,7 +28,7 @@
         "vid": "0xF000"
     },
     "layouts": {
-        "layout": {
+        "Layout": {
             "layout": [
                 { "matrix": [0, 0], "x": 0, "y": 0 },
                 { "matrix": [0, 1], "x": 1, "y": 0 },

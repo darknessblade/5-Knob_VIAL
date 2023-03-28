@@ -1,6 +1,4 @@
-BOARD = GENERIC_RP_RP2040
-BOOTLOADER = W25Q080
-LT0_ENABLE = yes
+
 MOUSEKEY_ENABLE = yes
 
 
@@ -9,7 +7,7 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 AUDIO_ENABLE = no           # Audio output
 # link time optimization to reduce firmware size
-LTO_ENABLE = yes
+#LTO_ENABLE = yes
 
 # https://docs.qmk.fm/#/feature_grave_esc
 # Combine esc, ~, ` to one key.
