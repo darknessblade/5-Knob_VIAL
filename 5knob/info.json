@@ -1,0 +1,41 @@
+{
+    "manufacturer": "darknessbladers",
+    "keyboard_name": "5knob",
+    "maintainer": "darknessbladers",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+    },
+    "matrix_pins": {
+        "cols": ["GP28", "GP27", "GP26", "GP25", "GP24"],
+        "rows": ["GP23"]
+    },
+	    "encoder": {
+        "enabled": true,
+        "rotary": [
+            {
+                "pin_a": "GP1, GP3, GP5, GP7, GP9",
+                "pin_b": "GP2, GP4, GP6, GP8, GP10"
+            }
+        ]
+    },
+
+
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x3500",
+        "vid": "0xF000"
+    },
+    "layouts": {
+        "Layout": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0 },
+                { "matrix": [0, 1], "x": 1, "y": 0 },
+                { "matrix": [0, 2], "x": 2, "y": 0 },
+                { "matrix": [0, 3], "x": 3, "y": 0 },
+                { "matrix": [0, 4], "x": 4, "y": 0 },
+            ]
+        }
+    }
+}
