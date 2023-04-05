@@ -1,0 +1,73 @@
+#include QMK_KEYBOARD_H
+
+// Defines names for use in layer keycodes and the keymap
+enum layer_names {
+    _BASE,
+    _FN1,
+    _FN2,
+    _FN3
+};
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+/* Base
+ * ┌───┬───┬───┬───┬───┐
+ * │   │   │   │   │   │
+ * └───┴───┴───┴───┴───┘
+ */
+[_BASE] = LAYOUT(
+    KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS),
+
+/* FN1
+ * ┌───┬───┬───┬───┬───┐
+ * │   │   │   │   │   │
+ * └───┴───┴───┴───┴───┘
+ */
+[_FN1] = LAYOUT(
+    KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS),
+
+
+/* FN2
+ * ┌───┬───┬───┬───┬───┐
+ * │   │   │   │   │   │
+ * └───┴───┴───┴───┴───┘
+ */
+[_FN2] = LAYOUT(
+    KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS),
+
+
+/* FN3
+ * ┌───┬───┬───┬───┬───┐
+ * │   │   │   │   │   │
+ * └───┴───┴───┴───┴───┘
+ */
+[_FN3] = LAYOUT(
+    KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS,       KC_TRNS)
+};
+
+
+
+/* Rotary Encoder Settings */
+
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [_BASE] =  {ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+	ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+    ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+	ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+    ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+},
+    
+    [_FN1] =  {ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+	ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+    ENCODER_CCW_CW(KC_TRNS, KC_TRNS),   ENCODER_CCW_CW(KC_TRNS, KC_TRNS),    ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+},
+    
+    [_FN2] =  {ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+	ENCODER_CCW_CW(KC_TRNS, KC_TRNS),    ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+	ENCODER_CCW_CW(KC_TRNS, KC_TRNS),    ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+},
+    
+    [_FN3] =  {ENCODER_CCW_CW(KC_TRNS, KC_TRNS),   ENCODER_CCW_CW(KC_TRNS, KC_TRNS),    ENCODER_CCW_CW(KC_TRNS, KC_TRNS),   ENCODER_CCW_CW(KC_TRNS, KC_TRNS),    ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+},
+},
+#endif

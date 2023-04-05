@@ -1,0 +1,42 @@
+{
+    "manufacturer": "darknessbladers",
+    "keyboard_name": "5knob",
+    "maintainer": "darknessbladers",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+    },
+    "matrix_pins": {
+        "cols": ["GP25", "GP24", "GP23", "GP22", "GP21"],
+        "rows": ["GP20"]
+    },
+	    "encoder": {
+        "enabled": true,
+    "rotary": [
+			{"pin_a": "GP0", "pin_b": "GP1"},
+			{"pin_a": "GP3", "pin_b": "GP4"}, 
+			{"pin_a": "GP5", "pin_b": "GP6"}, 
+			{"pin_a": "GP7", "pin_b": "GP8"}, 
+			{"pin_a": "GP9", "pin_b": "GP10"}
+    ]
+  },
+
+
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x3500",
+        "vid": "0xF000"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K00 (B0,B4)", "matrix": [0, 0], "x": 0, "y": 0},
+                {"label": "K01 (B0,B5)", "matrix": [0, 1], "x": 1, "y": 0},
+                {"label": "K02 (B0,B6)", "matrix": [0, 2], "x": 2, "y": 0},
+                {"label": "K03 (B0,B7)", "matrix": [0, 3], "x": 3, "y": 0},
+                {"label": "K04 (B0,C0)", "matrix": [0, 4], "x": 4, "y": 0},
+            ]
+        }
+    }
+}
