@@ -8,17 +8,17 @@
     "features": {
     },
     "matrix_pins": {
-        "cols": ["GP25", "GP24", "GP23", "GP22", "GP21"],
-        "rows": ["GP20"]
+        "cols": ["GP29", "GP28", "GP27", "GP26", "GP25"],
+        "rows": ["GP24"]
     },
 	    "encoder": {
         "enabled": true,
     "rotary": [
 			{"pin_a": "GP0", "pin_b": "GP1"},
-			{"pin_a": "GP3", "pin_b": "GP4"}, 
-			{"pin_a": "GP5", "pin_b": "GP6"}, 
-			{"pin_a": "GP7", "pin_b": "GP8"}, 
-			{"pin_a": "GP9", "pin_b": "GP10"}
+			{"pin_a": "GP2", "pin_b": "GP3"}, 
+			{"pin_a": "GP4", "pin_b": "GP5"}, 
+			{"pin_a": "GP6", "pin_b": "GP7"}, 
+			{"pin_a": "GP8", "pin_b": "GP9"}
     ]
   },
 

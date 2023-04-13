@@ -61,6 +61,6 @@ COMBO_ENABLE = no
 QMK_SETTINGS = no
 
 #encoder enable
-
+ENCODER_ENABLE = yes
 #encoder map enable
 ENCODER_MAP_ENABLE = yes
